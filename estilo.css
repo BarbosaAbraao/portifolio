@@ -1,0 +1,218 @@
+html{
+    color: white;
+    scroll-behavior: smooth;
+   
+}
+
+body{
+    color: #ffffff;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    margin: 0 auto;
+    max-width: 1120px;
+    background: linear-gradient(150deg,#000000,#383838,#484848,#585858);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+    
+}
+.cabecalho .logo{
+    color: #ffffff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ffffff;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 41px;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    transition: 0.4s;
+}
+.cabecalho a:hover .logo{
+    background-color: #282828;
+    color: #ddac17;
+    border: 2px solid #ddac17;
+    transform: scale(1.1);
+    
+}
+
+.menu{
+    font-size: 20px;
+}
+.cabecalho .menu li a:hover{
+    color: #ddac17;
+    background-color: #282828;
+    border-radius: 30px;
+    padding: 5px 5px;
+    transition: 0.5s;
+    transform: scale(1.1);
+    font-weight: lighter;
+    
+
+}
+
+.home{
+    display: flex;
+    min-height: calc(100vh - 80px);
+    align-items: center;
+    gap: 65px;
+    justify-content: space-between;
+}
+
+.home .info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    letter-spacing: 2px;
+    padding: 0 15px;
+    max-width: 50%;
+    font-size: 22px;
+
+}
+
+.home .ap{
+   font-size: 35px;
+   margin-bottom: 15px;
+}
+.links{
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+.links a i{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    padding: 7px 9px 8px;
+    font-size: 25px;
+    text-align: center;
+    
+}
+.links a i:hover{
+    color: #ddac17;
+    border: 1px solid #ddac17;
+    transition: 0.5s;
+    transform: scale(1.1);
+    background-color: #282828;
+}
+.foto{
+   max-width: 450px;
+   border-radius: 50%;
+    padding: 2px;
+    
+}
+.sf img{
+    width: 100%;
+    border-radius: 50%;
+    background:linear-gradient(to  right, #ecc440,#fffa8a,#ddac17,#ffff95);
+    background-size: 180% 180%;
+    animation: gradient-animation 5s ease infinite;
+}
+.projetos{
+    display: flex;
+    padding: 70px 0 70px;
+}
+.titulo{
+    text-align: center;
+    padding: 40px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.projetos .container-projetos{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.projetos .projeto{
+    max-width: 260px;
+    max-height: 500px;
+    position: relative;
+    display: none;
+}
+
+.projetos .projeto.ativo{
+    display: block;
+}
+
+.projetos .projeto img{
+   height: 300px;
+}
+
+.projetos .projeto h3{
+    color: #282828;
+    background-color: #ddac17;
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.projetos .projeto .informacoes-projeto{
+position: absolute;
+top: 0;
+color: #fff;
+width: 100%;
+height: 100%;
+font-weight: 600;
+padding: 20px;
+opacity: 0;
+}
+
+.projetos .projeto .informacoes-projeto:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+    background-color: #282828;
+}
+
+.mostrar{
+    background: none;
+    border: 1px solid #f7f7f7;
+    border-radius: 15px;
+    color: rgb(255, 255, 255);
+    width: 180px;
+    padding: 20px 32px 20px; 
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   margin-bottom: 90px;
+   margin-left: 455px;
+}
+
+.mostrar:hover{
+    background-color: #282828;
+    transition: 0.5s;
+    color: #ddac17;
+}
+ .mostrar.remover{
+    display: none;
+}
+@keyframes gradient-animation{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}  
